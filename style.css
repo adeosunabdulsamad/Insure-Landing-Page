@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'DM Serif Display';
+    background-color: white
+}
+
+
+/*Nav*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    padding-top: 4vh;
+}
+
+.nav-link {
+    color: hsl(273, 4%, 51%);
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+}
+
+#insure {
+    margin-left: 60px;
+    font-weight: 700;
+}
+
+#nav-bar {
+    margin-right: 100px;
+}
+
+#nav-bar img {
+    display: none;
+}
+
+.nav-link:hover {
+    color: hsl(270, 9%, 17%);
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*Showcase section*/
+
+h1 {
+    font-size: 60px;
+}
+
+hr {
+    width: 200px;
+}
+
+#showcase {
+    background-color: hsl(256, 26%, 20%);
+    display: flex;
+    justify-content: space-between;
+}
+
+#flex-right {
+    width: 50%;
+    color: hsl(0, 0%, 98%);
+    margin-top: 7%;
+    margin-right: 2%;
+    margin-left: 5%;
+}
+
+#flex-right p {
+    font-family: 'Karla';
+}
+
+#flex-left {
+    width: 50%;
+}
+
+#intro {
+    position: relative;
+    top: 20%;
+    right: 12%;
+}
+
+#intro-sm {
+    display: none;
+}
+
+#bg-right {
+    position: absolute;
+    right: 0%;
+}
+
+#bg-right-sm {
+    display: none;
+}
+
+#bg-left {
+    position: absolute;
+    top: 80%;
+}
+
+#bg-left-sm {
+    display: none;
+}
+
+.button {
+    text-decoration: none;
+    border: 1px solid hsl(0, 0%, 98%);
+    padding: 4px 20px 4px 20px;
+    color: hsl(0, 0%, 98%);
+}
+
+.button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(270, 9%, 17%);
+    border: 1px solid hsl(270, 9%, 17%);
+}
+
+#button-1 {
+    text-decoration: none;
+    border: 1px solid hsl(270, 9%, 17%);
+    padding: 4px 12px 4px 12px;
+    color: hsl(270, 9%, 17%);
+}
+
+#button-1:hover {
+    background-color: hsl(270, 9%, 17%);
+    color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 98%);
+}
+
+
+/*services*/
+
+#services {
+    margin-top: 60vh;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+#flexbox div {
+    width: 33%;
+}
+
+#flexbox p {
+    color: hsl(273, 4%, 51%);
+}
+
+#flexbox img {
+    margin-bottom: 20px;
+}
+
+
+/*How we work*/
+
+#info {
+    background-color: hsl(256, 26%, 20%);
+    margin: auto;
+    width: 80%;
+    color: hsl(0, 0%, 98%);
+    padding: 20px 0 20px 10px;
+    height: 38vh;
+}
+
+#right {
+    float: right;
+    margin-top: 7%;
+    margin-right: 5%;
+}
+
+#left {
+    float: left;
+    margin-left: 7%;
+}
+
+#bg-how {
+    position: relative;
+    bottom: 115px;
+    left: 40px;
+}
+
+#bg-how-small {
+    display: none;
+}
+
+
+/*footer*/
+
+#foot {
+    background-color: hsl(0, 0%, 98%);
+    margin-top: 15vh;
+    padding-left: 20vh;
+    width: 100%;
+}
+
+#foot hr {
+    width: 90%;
+}
+
+#bg-foot {
+    position: absolute;
+    right: 900px;
+    transform: scale(0.7);
+    bottom: -216vh;
+}
+
+#bg-foot-sm {
+    display: none;
+}
+
+.footerdiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerdiv div {
+    width: 25%;
+    color: hsl(270, 9%, 17%);
+}
+
+.footer li:first-child {
+    color: hsl(273, 4%, 51%);
+}
+
+.footer li:hover {
+    text-decoration: underline;
+    cursor: grabbing;
+}
+
+#flexfoot {
+    display: flex;
+    justify-content: space-between;
+}
+
+#flexfoot a {
+    color: hsl(273, 4%, 51%);
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+}
+
+#flexfoot div {
+    font-weight: 700;
+}
+
+#flexfoot nav {
+    margin-right: 120px;
+    margin-bottom: 10px;
+}
+
+
+/*responsive layout*/
+
+@media(max-width:375px) {
+    body {
+        text-align: center;
+    }
+    hr,
+    .button {
+        margin: auto;
+    }
+    #flexbox div,
+    #flex-left {
+        width: 100%;
+    }
+    #flex-right {
+        width: 100%;
+        padding: 10px 20px 40px 20px;
+    }
+    .footerdiv div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #flexbox,
+    .footerdiv,
+    #showcase,
+    #flexfoot {
+        display: block;
+        margin: auto;
+    }
+    #flexfoot nav {
+        margin-left: 10px;
+    }
+    #intro-sm {
+        display: block;
+    }
+    #nav-bar img {
+        display: block;
+    }
+    #nav-bar a {
+        display: none;
+    }
+    #nav-bar:hover {
+        background-color: hsl(270, 9%, 17%);
+        height: 100vh;
+    }
+    #nav-bar:hover .nav-link {
+        display: block;
+        width: 100%;
+        background-color: hsl(270, 9%, 17%);
+        color: hsl(0, 0%, 98%);
+        margin-bottom: 20px;
+    }
+    #nav-bar:hover #button-1 {
+        display: block;
+        width: 100%;
+        background-color: hsl(270, 9%, 17%);
+        color: hsl(0, 0%, 98%);
+        border: 1px solid hsl(0, 0%, 98%);
+    }
+    #intro,
+    #bg-right,
+    #bg-left,
+    #bg-how,
+    #bg-foot {
+        display: none;
+    }
+    #info {
+        height: 200vh;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
